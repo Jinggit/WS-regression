@@ -1,0 +1,430 @@
+{
+  "uid" : "136e512432705f4a",
+  "name" : "test_words_search[climate]",
+  "fullName" : "test_word_search.TestWordLearn#test_words_search",
+  "historyId" : "0d4e1e7a8f52f6e21fe5b3fb1794b9ca",
+  "time" : {
+    "start" : 1594692290541,
+    "stop" : 1594692368854,
+    "duration" : 78313
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1594692288331,
+      "stop" : 1594692290536,
+      "duration" : 2205
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "打开放大字体页面",
+      "time" : {
+        "start" : 1594692290542,
+        "stop" : 1594692291143,
+        "duration" : 601
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入内容进行搜索",
+      "time" : {
+        "start" : 1594692291143,
+        "stop" : 1594692292786,
+        "duration" : 1643
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'climate'"
+      }, {
+        "name" : "period",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "打开google翻译页面",
+      "time" : {
+        "start" : 1594692292787,
+        "stop" : 1594692294550,
+        "duration" : 1763
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入内容进行搜索",
+      "time" : {
+        "start" : 1594692294550,
+        "stop" : 1594692297792,
+        "duration" : 3242
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'climate'"
+      }, {
+        "name" : "period",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "发音n次",
+      "time" : {
+        "start" : 1594692297792,
+        "stop" : 1594692306941,
+        "duration" : 9149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "count",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "读出中文翻译",
+      "time" : {
+        "start" : 1594692306942,
+        "stop" : 1594692310037,
+        "duration" : 3095
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "count",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "得到同义词",
+      "time" : {
+        "start" : 1594692310038,
+        "stop" : 1594692310081,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "读出同义词",
+      "time" : {
+        "start" : 1594692310081,
+        "stop" : 1594692320418,
+        "duration" : 10337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "输入内容进行搜索",
+        "time" : {
+          "start" : 1594692310081,
+          "stop" : 1594692311291,
+          "duration" : 1210
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "search_char",
+          "value" : "'atmosphere'"
+        }, {
+          "name" : "period",
+          "value" : "1"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "发音n次",
+        "time" : {
+          "start" : 1594692311291,
+          "stop" : 1594692320418,
+          "duration" : 9127
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "count",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'atmosphere'"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "打开放大字体页面",
+      "time" : {
+        "start" : 1594692320418,
+        "stop" : 1594692321002,
+        "duration" : 584
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入内容进行搜索",
+      "time" : {
+        "start" : 1594692321002,
+        "stop" : 1594692322461,
+        "duration" : 1459
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'climate'"
+      }, {
+        "name" : "period",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "打开google图片查询页面",
+      "time" : {
+        "start" : 1594692322462,
+        "stop" : 1594692323463,
+        "duration" : 1001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入内容进行搜索",
+      "time" : {
+        "start" : 1594692323464,
+        "stop" : 1594692329199,
+        "duration" : 5735
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "706f9b5dd7f875e5",
+        "name" : "单词 climate 截图",
+        "source" : "706f9b5dd7f875e5.png",
+        "type" : "image/png",
+        "size" : 3415254
+      } ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'climate'"
+      }, {
+        "name" : "period",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "打开google视频页面",
+      "time" : {
+        "start" : 1594692329199,
+        "stop" : 1594692329627,
+        "duration" : 428
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入内容进行搜索",
+      "time" : {
+        "start" : 1594692329627,
+        "stop" : 1594692332364,
+        "duration" : 2737
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "search_char",
+        "value" : "'climate'"
+      }, {
+        "name" : "period",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "随机选择播放视频",
+      "time" : {
+        "start" : 1594692332364,
+        "stop" : 1594692368854,
+        "duration" : 36490
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "period",
+        "value" : "20"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1594692374196,
+      "stop" : 1594692374218,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "搜索单词解释并发音,放大拼写,查找单词图片,查找单词视频"
+  }, {
+    "name" : "feature",
+    "value" : "单词学习"
+  }, {
+    "name" : "suite",
+    "value" : "test_word_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWordLearn"
+  }, {
+    "name" : "host",
+    "value" : "ITs-Mac-mini"
+  }, {
+    "name" : "thread",
+    "value" : "443-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_word_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "search_char",
+    "value" : "'climate'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9c53cf1962ada220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594691894921,
+        "stop" : 1594691973629,
+        "duration" : 78708
+      }
+    }, {
+      "uid" : "a80440097563defd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1594691598649,
+        "stop" : 1594691683482,
+        "duration" : 84833
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "136e512432705f4a.json",
+  "parameterValues" : [ "'climate'" ]
+}

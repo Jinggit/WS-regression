@@ -1,1 +1,0 @@
-<po.googlevideopage.VideoHomePage object at 0x1041b12e8> 页面未能找到 ('xpath', "//*[contains(text(),'Skip Ad')]") 元素

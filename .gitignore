@@ -10,7 +10,7 @@
 
 
 # misc
-.idea
+.idea/
 allure-report/*
 allure-results/*
 .python_cache

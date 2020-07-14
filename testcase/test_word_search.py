@@ -49,8 +49,11 @@ class TestWordLearn:
      'pretend', 'sail', 'shoot', 'avoid', 'terrorize', 'transfer', 'fearless', 'target', 'fail', 'respect', 'approach',
      'bright', 'shine', 'response', 'effort', 'flight', 'headed', 'crash', 'investigate', 'disappearance']
 
+    wordlist4 = ['fairly', 'in reality', 'physical', 'relative', 'extend', 'although', 'memorize', 'primarily',
+                 'determined', 'immediate', 'locate', 'in demand', 'technique', 'purchase', 'terrorize', 'disappearance']
+
     @allure.story("搜索单词解释并发音,放大拼写,查找单词图片,查找单词视频")
-    @pytest.mark.parametrize("search_char", wordlist)
+    @pytest.mark.parametrize("search_char", wordlist4)
     def test_words_search(self, search_char):
         READ = 3
         LOOK = 1
@@ -66,21 +69,25 @@ class TestWordLearn:
         googletranspage.search(search_char, READ)
         googletranspage.listen()
         googletranspage.listen_tran(1)
+        #同义词
         syn_word = googletranspage.get_syn_word()
         googletranspage.read_syn_word(syn_word)
         #放大拼写
-        enlargepage = EnlargeHomePage(self.driver)
-        enlargepage.open_homepage()
-        enlargepage.search(search_char, LOOK)
+        # enlargepage = EnlargeHomePage(self.driver)
+        # enlargepage.open_homepage()
+        # enlargepage.search(search_char, LOOK)
         #查找单词图片
         googleimagepage = ImageHomePage(self.driver)
         googleimagepage.open_homepage()
         googleimagepage.search(search_char, LOOK)
+        googleimagepage.clickfirstimage(READ)
+        #搜索结果截图
+        googleimagepage.screenshot(search_char)
         #查找单词视频
-        googlevideopage = VideoHomePage(self.driver)
-        googlevideopage.open_homepage()
-        googlevideopage.search(search_char, LOOK)
-        googlevideopage.play(WATCH)
+        # googlevideopage = VideoHomePage(self.driver)
+        # googlevideopage.open_homepage()
+        # googlevideopage.search(search_char, LOOK)
+        # googlevideopage.play(WATCH)
 
 
 if __name__ == '__main__':

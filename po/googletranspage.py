@@ -23,18 +23,18 @@ class TranHomePage(BasePage):
 
 
     @allure.step('发音n次')
-    def listen(self, count=3):
+    def listen(self, count=3, period=1):
         listen_button = self.find_element(*self.listen_button_loc)
         for i in range(count):
             listen_button.click()
-            time.sleep(3)
+            time.sleep(period)
 
     @allure.step('读出中文翻译')
-    def listen_tran(self, count=1):
+    def listen_tran(self, count=1, period=1):
         listen_button = self.find_element(*self.listen_tran_button_loc)
         for i in range(count):
             listen_button.click()
-            time.sleep(3)
+            time.sleep(period)
 
     @allure.step('得到同义词')
     def get_syn_word(self):

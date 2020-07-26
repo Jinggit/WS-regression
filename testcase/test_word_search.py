@@ -8,6 +8,7 @@ from po.googleimagepage import ImageHomePage
 from po.googlevideopage import VideoHomePage
 from po.enlargepage import EnlargeHomePage
 
+
 @allure.feature("单词学习")
 class TestWordLearn:
     @classmethod
@@ -19,7 +20,7 @@ class TestWordLearn:
     def teardown_class(cls):
         cls.driver.quit()
 
-    wordlist = ['climate', 'complete', 'fairly', 'giant', 'heavy', 'hunter', 'in reality', 'museum', 'physical',
+    wordlist_RE1 = ['climate', 'complete', 'fairly', 'giant', 'heavy', 'hunter', 'in reality', 'museum', 'physical',
      'relative', 'appearance', 'dig up', 'estimate', 'examine', 'extend', 'length', 'mystery',
      'opinion', 'seek', 'terrible', 'although', 'appropriate', 'collect', 'magical', 'memorize', 'primarily',
      'publish', 'reflect', 'scary', 'text', 'accidental', 'affect', 'deep',
@@ -32,28 +33,36 @@ class TestWordLearn:
      'pretend', 'sail', 'shoot', 'avoid', 'terrorize', 'transfer', 'fearless', 'target', 'fail', 'respect', 'approach',
      'bright', 'shine', 'response', 'effort', 'flight', 'headed', 'crash', 'investigate', 'disappearance']
 
-    wordlist1 = ['climate', 'complete', 'fairly', 'giant', 'heavy', 'hunter', 'in reality', 'museum', 'physical',
-     'relative', 'appearance', 'dig up', 'estimate', 'examine', 'extend', 'length', 'mystery',
-     'opinion', 'seek', 'terrible', 'although', 'appropriate', 'collect', 'magical', 'memorize', 'primarily',
-     'publish', 'reflect', 'scary', 'text', 'accidental', 'affect', 'deep',
-     'determined', 'hide', 'immediate', 'recognize']
+    wordlist_RE2_Unit3 = [('analyze', 'to study (something) closely and carefully'),
+                          ('attach', 'to be or become joined or connected'),
+                          ('conduct', 'to plan and do (something, such as an activity)'),
+                          ('effective', 'producing a result that is wanted'),
+                          ('injury', 'harm or damage'),
+                          ('luxurious', 'very comfortable and expensive'),
+                          ('murder', 'the crime of deliberately killing a person'),
+                          ('offer', 'to present or put forward'),
+                          ('rule out', 'exclude'),
+                    ('vulnerable', 'easily hurt or harmed'),
+                    ('beneath', ' in or to a lower position'),
+                    ('cruelly', ' in a manner that willingly or knowingly causing pain or distress'),
+                    ('debatable', ' open to question'),
+                    ('deduce', 'to use logic or reason to decide something'),
+                    ('enable', 'to make (something) possible'),
+                          ('frozen', ' turned into ice'),
+                    ('implies', 'to express (something) in an indirect way'),
+                    ('indicate', 'show'),
+                    ('laborer', 'a person who does hard physical work for money'),
+                    ('wealthy', 'if you are wealthy you have a lot of money')]
 
-    wordlist2 = ['shock', 'sudden', 'youth', 'illegal', 'law',
-     'locate', 'preserve', 'valuable', 'rare', 'weigh', 'treasure', 'collector', 'in demand destroy',
-     'middle', 'race', 'equipment', 'limit', 'majority', 'height', 'employed', 'capable', 'occupation',
-     'accomplish', 'construction', 'network', 'currency', 'protect', 'expose', 'technique', 'reveal', 'apply',
-     'vivid', 'timeless', 'confirm', 'ordinary', 'according to']
-
-    wordlist3 = ['involve', 'task', 'role', 'block', 'compete',
-     'proud', 'average', 'freedom', 'equality', 'divide', 'income', 'steal', 'purchase', 'bury', 'factor', 'disease',
-     'pretend', 'sail', 'shoot', 'avoid', 'terrorize', 'transfer', 'fearless', 'target', 'fail', 'respect', 'approach',
-     'bright', 'shine', 'response', 'effort', 'flight', 'headed', 'crash', 'investigate', 'disappearance']
+    frenchword = [("olympiade", "Période de quatre ans entre deux célébrations des Jeux olympiques."),("Antiquité", "Les plus anciennes civilisations à écritures."),("avoir lieu", "se passer, exister (à un endroit, à un moment)."),("compétition", "Épreuve sportive disputée entre plusieurs concurrents."),("course", "Action de courir"),("dédié", "Consacrer, vouer."),
+                  ("vainqueur", "Gagnant."),("épreuve", "Compétition"),("gagnant", "Qui gagne ou qui remporte une épreuve."),("discipline", "domaine, activités sportives, épreuves"),("récompense", "Bien matériel ou moral donné ou reçu pour une bonne action, un service rendu, des mérites."),("couronne", "Cercle que l'on met autour de la tête comme parure ou marque d'honneur."),
+                  ("laurier", "Arbre à feuilles allongées")]
 
     @allure.story("搜索单词解释并发音,放大拼写,查找单词图片,查找单词视频")
-    @pytest.mark.parametrize("search_char", wordlist)
-    def test_words_search(self, search_char):
-        READ = 3
-        LOOK = 1
+    @pytest.mark.parametrize("search_char, meaning", frenchword)
+    def test_words_search(self, search_char, meaning):
+        READ = 5
+        LOOK = 3
         WATCH = 20
 
         #放大拼写
@@ -66,8 +75,12 @@ class TestWordLearn:
         googletranspage.search(search_char, READ)
         googletranspage.listen()
         googletranspage.listen_tran(1)
-        syn_word = googletranspage.get_syn_word()
-        googletranspage.read_syn_word(syn_word)
+        #英英翻译
+        googletranspage.search(meaning, READ)
+        googletranspage.listen(period=READ)
+        #同义词
+        #syn_word = googletranspage.get_syn_word()
+        #googletranspage.read_syn_word(syn_word)
         #放大拼写
         enlargepage = EnlargeHomePage(self.driver)
         enlargepage.open_homepage()
@@ -77,10 +90,10 @@ class TestWordLearn:
         googleimagepage.open_homepage()
         googleimagepage.search(search_char, LOOK)
         #查找单词视频
-        googlevideopage = VideoHomePage(self.driver)
-        googlevideopage.open_homepage()
-        googlevideopage.search(search_char, LOOK)
-        googlevideopage.play(WATCH)
+        # googlevideopage = VideoHomePage(self.driver)
+        # googlevideopage.open_homepage()
+        # googlevideopage.search(search_char, LOOK)
+        # googlevideopage.play(WATCH)
 
 
 if __name__ == '__main__':

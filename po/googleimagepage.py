@@ -8,7 +8,8 @@ from PIL import Image
 class ImageHomePage(BasePage):
     search_box_loc = (By.NAME, "q")
     search_button_loc = (By.XPATH, "//*[@aria-label='Google Search']")
-    result_image = (By.ID, "islmp")
+    result_image_loc= (By.ID, "islmp")
+    first_image_loc = (By.XPATH, "(//div[@class ='islrc']/div)[1]")
 
     @allure.step('打开google图片查询页面')
     def open_homepage(self):
@@ -21,5 +22,14 @@ class ImageHomePage(BasePage):
         search_button = self.find_element(*self.search_button_loc)
         search_button.click()
         time.sleep(period)
-        image = self.find_element(*self.result_image).screenshot_as_png
+
+    @allure.step('搜索结果截图')
+    def screenshot(self, search_char):
+        image = self.find_element(*self.result_image_loc).screenshot_as_png
         allure.attach(image, name="单词 %s 截图" % search_char, attachment_type=AttachmentType.PNG)
+
+    @allure.step('点击第一个图片')
+    def clickfirstimage(self, period):
+        first_image = self.find_element(*self.first_image_loc)
+        first_image.click()
+        time.sleep(period)

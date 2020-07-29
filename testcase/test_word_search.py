@@ -59,19 +59,48 @@ class TestWordLearn:
                           ('flee', 'escape'),
                           ('exposure', 'is the harmful effect on your body from very cold weather')
                           ]
+    wordlist_RE2_Unit4B = [('face', 'impression from people situation'),
+                          ('series', 'a group of events or actions that are planned to happen one after the other'),
+                          ('basis', 'major'),
+                          ('self-defence', 'to protect yourself'),
+                          ('ensure', 'make sure'),
+                          ('publicity', 'advertisement'),
+                          ('accept', 'to agree'),
+                          ('violence', 'behaviour that is to hurt someone'),
+                          ('entertain', 'to make feel happy or funny'),
+                          ('discipline', 'train (someone) to obey rules'),
+                          ('endure', 'suffer (something painful or difficult) patiently'),
+                          ('take turn doing', 'one by one'),
+                          ('jealous', 'someone wants something the other person has'),
+                           ('reserved', 'something is kept for a particular purpose'),
+                           ('reunite', 'meet again after being separated'),
+                           ('ceremony', 'formal event, such as a wedding'),
+                           ('demonstrate', 'make it clear to other people, let other people to understand it'),
+                           ('approve', 'think it good'),
+                          ]
 
-    frenchword = [("olympiade", "Période de quatre ans entre deux célébrations des Jeux olympiques."),("Antiquité", "Les plus anciennes civilisations à écritures."),("avoir lieu", "se passer, exister (à un endroit, à un moment)."),("compétition", "Épreuve sportive disputée entre plusieurs concurrents."),("course", "Action de courir"),("dédié", "Consacrer, vouer."),
-                  ("vainqueur", "Gagnant."),("épreuve", "Compétition"),("gagnant", "Qui gagne ou qui remporte une épreuve."),("discipline", "domaine, activités sportives, épreuves"),("récompense", "Bien matériel ou moral donné ou reçu pour une bonne action, un service rendu, des mérites."),("couronne", "Cercle que l'on met autour de la tête comme parure ou marque d'honneur."),
-                  ("laurier", "Arbre à feuilles allongées")]
+    frenchword = [("ne… que", "seulement", "Je ne bois que de l'eau."),
+                  # ("Antiquité", "Les plus anciennes civilisations à écritures."),
+                  # ("avoir lieu", "se passer, exister (à un endroit, à un moment)."),
+                  # ("compétition", "Épreuve sportive disputée entre plusieurs concurrents."),
+                  # ("course", "Action de courir"),("dédié", "Consacrer, vouer."),
+                  # ("vainqueur", "Gagnant."),
+                  # ("épreuve", "Compétition"),
+                  # ("gagnant", "Qui gagne ou qui remporte une épreuve."),
+                  # ("discipline", "domaine, activités sportives, épreuves"),
+                  # ("récompense", "Bien matériel ou moral donné ou reçu pour une bonne action, un service rendu, des mérites."),
+                  # ("couronne", "Cercle que l'on met autour de la tête comme parure ou marque d'honneur."),
+                  # ("laurier", "Arbre à feuilles allongées")
+                  ]
 
     wordlist4 = ['fairly', 'in reality', 'physical', 'relative', 'extend', 'although', 'memorize', 'primarily',
                  'determined', 'immediate', 'locate', 'in demand', 'technique', 'purchase', 'terrorize', 'disappearance']
 
     @allure.story("搜索单词解释并发音,放大拼写,查找单词图片,查找单词视频")
-    @pytest.mark.parametrize("search_char, meaning", wordlist_RE2_Unit3)
+    @pytest.mark.parametrize("search_char, meaning ", wordlist_RE2_Unit4B)
     def test_words_search(self, search_char, meaning):
-        READ = 5
-        LOOK = 3
+        READ = 1
+        LOOK = 1
         WATCH = 20
 
         #放大拼写
@@ -84,9 +113,12 @@ class TestWordLearn:
         googletranspage.search(search_char, READ)
         googletranspage.listen()
         googletranspage.listen_tran(1)
-        #英英翻译
+        #翻译
         googletranspage.search(meaning, READ)
         googletranspage.listen(period=READ)
+        #例句
+        # googletranspage.search(example, READ)
+        # googletranspage.listen(period=READ)
         #同义词
         #syn_word = googletranspage.get_syn_word()
         #googletranspage.read_syn_word(syn_word)

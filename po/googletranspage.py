@@ -27,7 +27,7 @@ class TranHomePage(BasePage):
         listen_button = self.find_element(*self.listen_button_loc)
         for i in range(count):
             listen_button.click()
-            time.sleep(period)
+            self.find_element(*self.listen_button_loc)
 
     @allure.step('读出中文翻译')
     def listen_tran(self, count=1, period=1):

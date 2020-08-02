@@ -7,7 +7,7 @@ from po.googletranspage import TranHomePage
 from po.googleimagepage import ImageHomePage
 from po.googlevideopage import VideoHomePage
 from po.enlargepage import EnlargeHomePage
-from data.words import wordlist_RE2_Unit4, wordlist_RE2_Unit5
+from data.words import *
 
 
 @allure.feature("单词学习")
@@ -21,11 +21,11 @@ class TestWordLearn:
     def teardown_class(cls):
         cls.driver.quit()
 
-    @allure.story("搜索单词解释并发音,放大拼写,查找单词图片,查找单词视频")
+    @allure.story("搜索单词解释并发音,放大拼写,翻译,例句,查找单词图片,查找单词视频")
     @pytest.mark.parametrize("search_char, meaning, example", wordlist_RE2_Unit5)
     def test_words_search(self, search_char, meaning, example):
-        READ = 5
-        LOOK = 5
+        READ = 3
+        LOOK = 3
         WATCH = 20
 
         #放大拼写

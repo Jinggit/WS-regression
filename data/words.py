@@ -75,21 +75,47 @@ wordlist_RE2_Unit5 = [
                           ('confident', 'feeling confidence', 'Be confident and go!'),
                           ('joke', 'make jokes', 'people joked that the bad smell was good gift'),
                           ('nickname', 'informal name', 'my nickname is pengpeng'),
-                          ('ladder', 'a structure made for climbing on', 'I climbed the ladder')
+                          ('ladder', 'a structure made for climbing on', 'I climbed the ladder'),
+                          ('shaft', 'a vertical tunnel', 'slowly we went down a shaft'),
+                          ('Dynamite', 'an explosive substance', 'buying dynamite is illegal'),
+                          ('scar', 'a mark left on the skin after a wound or an jnjury has healed',
+                           'there is a scar on the Harry Potter\'s head'),
+                          ('silent', 'an explosive substance', 'buying dynamite is illegal'),
+                          ('iron', 'a strong, hard magnetic silvery-gray metal', 'the man places the iron cover over the hole'),
+                          ('tunnel', 'an artificial underground passage', 'the couple had been exploring the tunnels beneath the city'),
+                          ('occupy', 'take control of', 'the Romans occupied Paris'),
+                          ('sculpture', 'the art of making', 'the Romans cut out stone and made sculptures'),
+                          ('permit', 'give authorization to someone to do something, allow', 'buying dynamite is not permitted'),
+                          ('trend', 'more popular', 'exploring the underground city became a trend'),
+                          ('entrance', 'an explosive substance', 'there are a lot entrances to enter the tunnels'),
+                          ('dare', 'have the courage to do something.', 'he dare not call his name Voldemort'),
+                          ('descend', 'an explosive substance', 'we descend into the underground'),
+                          ('catch', 'capture', 'the couple explored the tunnel without being caught')
                           ]
 
+wordlist_RE2_Unit6 = [
+                        ('bite', 'use the teeth to cut into something.', 'the woman\'s arm was bitten off by an alligator'),
+                        ('horror', 'an intense feeling of fear, shock, or disgust.', 'children screamed in horror'),
+                        ('confusion', 'unclear in one\'s mind about something.', 'she looked about her in confusion'),
+                        ('categorize', 'place in a particular class or group.', 'great whites are often categorized man eater'),
+                        ('inaccurate', 'not accurate, not correct.', 'a forecast that proved wildly inaccurate'),
+                        ('victim', 'a person harmed, injured, or killed as a result of a crime, accident, or other event or action.', 'the victim of shark'),
+                        ('arrange', 'put things in order.', 'there are 300 teeth arranged in several rows'),
+                          ('tempting', 'attracting someone', 'a seal is very tempting snack to a shark'),
+                          ('hypothesize', 'put something forward as a theory', 'shark experts hypothesize that the shark attack'),
+                          ('gather', 'bring together', 'we have gathered the information'),
+                          ]
+
+
 frenchword = [("ne… que", "seulement", "Je ne bois que de l'eau."),
-                  # ("Antiquité", "Les plus anciennes civilisations à écritures."),
-                  # ("avoir lieu", "se passer, exister (à un endroit, à un moment)."),
-                  # ("compétition", "Épreuve sportive disputée entre plusieurs concurrents."),
-                  # ("course", "Action de courir"),("dédié", "Consacrer, vouer."),
-                  # ("vainqueur", "Gagnant."),
-                  # ("épreuve", "Compétition"),
-                  # ("gagnant", "Qui gagne ou qui remporte une épreuve."),
-                  # ("discipline", "domaine, activités sportives, épreuves"),
-                  # ("récompense", "Bien matériel ou moral donné ou reçu pour une bonne action, un service rendu, des mérites."),
-                  # ("couronne", "Cercle que l'on met autour de la tête comme parure ou marque d'honneur."),
-                  # ("laurier", "Arbre à feuilles allongées")
+              ("rongeur", "Mammifère à incisives tranchantes (ordre des Rongeurs ; ex. le lapin, le rat).", "Les Rongeurs sont un ordre de mammifères placentaires."),
+              ("incisive", "tranchant", ""),
+              ("tranchant", "Qui est dur et effilé, peut diviser, couper.", "Le tranchet est un outil de coupe utilisé par le cordonnier et le bottier."),
+              ("écorce", "Enveloppe d'un tronc d'arbre et de ses branches, qu'on peut détacher du bois.", "l'écorce de bouleau."),
+              ("Feuillage", "Ensemble des feuilles (d'un arbre ou d'une plante de grande taille).", "Feuillage du chêne."),
+              ("barrage", "Ouvrage hydraulique qui a pour objet de relever le plan d'eau, d'accumuler ou de dériver l'eau d'une rivière.).", "Feuillage du chêne."),
+              ("tronc", "Partie inférieure et dénudée de la tige (d'un arbre), entre les racines et les branches maîtresses.).", "Feuillage du chêne."),
+              ("s'éloigner", "Se mettre loin.", "Ne t'éloigne pas d'ici.")
                   ]
 
 wordlist4 = ['fairly', 'in reality', 'physical', 'relative', 'extend', 'although', 'memorize', 'primarily',

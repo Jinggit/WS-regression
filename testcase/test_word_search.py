@@ -22,7 +22,7 @@ class TestWordLearn:
         cls.driver.quit()
 
     @allure.story("搜索单词解释并发音,放大拼写,翻译,例句,查找单词图片,查找单词视频")
-    @pytest.mark.parametrize("search_char, meaning, example", wordlist_RE2_Unit5)
+    @pytest.mark.parametrize("search_char, meaning, example", wordlist_RE2_Unit7)
     def test_words_search(self, search_char, meaning, example):
         READ = 3
         LOOK = 3
@@ -42,8 +42,8 @@ class TestWordLearn:
         googletranspage.search(meaning, READ)
         googletranspage.listen(period=READ)
         #例句
-        googletranspage.search(example, READ)
-        googletranspage.listen(period=READ)
+        # googletranspage.search(example, READ)
+        # googletranspage.listen(period=READ)
         #同义词
         #syn_word = googletranspage.get_syn_word()
         #googletranspage.read_syn_word(syn_word)

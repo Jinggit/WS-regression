@@ -106,6 +106,36 @@ wordlist_RE2_Unit6 = [
                           ('gather', 'bring together', 'we have gathered the information'),
                           ]
 
+wordlist_RE2_Unit7 = [
+                        ('make sense', 'is reasonable or shows good judgment', 'I get an opportunity to ride the new subway'),
+                        ('export', 'send (goods or services) to another country for sale.', 'I boarded the big ship'),
+                        ('dominate', 'assist', 'the floor is too slippery'),
+                        ('handle', 'treat', 'she was experienced in driving car, she is a experienced driver'),
+                        ('considerable', 'high', 'sewer worker kept the water flowing smoothly'),
+                        ('invest', 'put effort or money into', 'there are a lot of the concrete buildings in downtown'),
+                        ('prevent', 'prevent ... from', 'it smell awful'),
+                          ('claim', 'declare, say', 'the rats drowned in water'),
+                          ('predictable', 'able to be predicted', 'Be confident and go!'),
+                          ('renowned', 'well-known', 'people joked that the bad smell was good gift'),
+                          ('essence', 'something abstract', 'my nickname is pengpeng'),
+                          ('derive', 'obtain something from', 'I climbed the ladder'),
+                          ('obtain', 'get through the effort', 'slowly we went down a shaft'),
+                          ('authority', 'the power or right to give orders, make decisions', 'buying dynamite is illegal'),
+                          ('budget', 'money that is available to spend ',
+                           'there is a scar on the Harry Potter\'s head'),
+                          ('display', 'make a exhibition of something in a place where it can be easily seen.', 'buying dynamite is illegal'),
+                          ('guard', 'watch over in order to protect or control.', 'the man places the iron cover over the hole'),
+                          ('distinctively', 'uniquely', 'the couple had been exploring the tunnels beneath the city'),
+                          ('emphasis', 'importance', 'the Romans occupied Paris'),
+                          ('precede', 'come before something', 'the dinner is preceded by washing hands'),
+                          ('permit', 'give authorization to someone to do something, allow', 'buying dynamite is not permitted'),
+                          ('trend', 'more popular', 'exploring the underground city became a trend'),
+                          ('entrance', 'an explosive substance', 'there are a lot entrances to enter the tunnels'),
+                          ('dare', 'have the courage to do something.', 'he dare not call his name Voldemort'),
+                          ('descend', 'an explosive substance', 'we descend into the underground'),
+                          ('catch', 'capture', 'the couple explored the tunnel without being caught')
+                          ]
+
 
 frenchword = [("ne… que", "seulement", "Je ne bois que de l'eau."),
               ("rongeur", "Mammifère à incisives tranchantes (ordre des Rongeurs ; ex. le lapin, le rat).", "Les Rongeurs sont un ordre de mammifères placentaires."),
